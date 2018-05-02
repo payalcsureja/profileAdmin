@@ -1,11 +1,13 @@
 # Starter Kit for [Building Applications in React and Redux in ES6]
 
 ###
+```
 cd www
 git clone https://github.com/payalcsureja/reactApp.git reactApp
 cd reactApp
 npm install
 npm start
+```
 
 # https://help.github.com/articles/importing-a-git-repository-using-the-command-line/
 # Importing a Git repository using the command line
@@ -14,13 +16,14 @@ npm start
 $ npm run build
 The build folder is ready to be deployed.
 You may serve it with a static server:
-
+```
   npm install -g serve
   serve -s build
-
+```
 ### Steps
 
 #### [Create React App](https://github.com/facebookincubator/create-react-app).
+```
 $ npm install -g create-react-app
 $ create-react-app react-app
 
@@ -29,7 +32,7 @@ $ npm start
 
 $ npm run eject
 $ npm i sass-loader node-sass --save
-
+```
 ### Update webpack.config.dev.js file within the config folder for saas
 https://medium.com/@kswanie21/css-modules-sass-in-create-react-app-37c3152de9
 https://medium.com/@kswanie21/css-modules-sass-in-create-react-app-37c3152de9
@@ -138,12 +141,13 @@ module.exports = { plugins: [require('autoprefixer')] };
 
 ### serve build dir locally
 $ npm run build
+
 The build folder is ready to be deployed.
 You may serve it with a static server:
-
+```
   npm install -g serve
   serve -s build
-
+```
 # OR use links
 https://medium.com/@srinisoundar/setting-up-environment-for-react-sass-es2015-babel-with-webpack-2f77445129
 https://github.com/rwieruch/minimal-react-webpack-babel-setup
