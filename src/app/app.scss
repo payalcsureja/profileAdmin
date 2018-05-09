@@ -1,0 +1,20 @@
+@import "../variables";
+
+// :export { navbar-color: $navbar-color; } // To access it in jsx via {styles['navbar-color']}
+// @value navbar-color "#{$navbar-color}";  // To access it in jsx via {styles['navbar-color']}
+
+.app {
+  background-color: $bg-color; 
+}
+  
+.app-header {
+  background-color: $navbar-bg-color;   
+  padding: 20px;
+  color: $navbar-color;
+}
+
+.app-title {
+  font-size: 1.5em;
+}
+
+  
