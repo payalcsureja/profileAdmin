@@ -1,5 +1,12 @@
 # Starter Kit for [Building Applications in React and Redux in ES6]
 
+  503  npm install --save react-router-dom
+  504  npm install --save reactstrap
+  505  npm install --save react-notification-alert
+  506  npm install --save perfect-scrollbar
+  507  npm install --save history
+  508  npm install --save jquery
+
 ###
 ```
 cd www
@@ -108,10 +115,10 @@ const ExtractTextPlugin = require('extract-text-webpack-plugin');
 
 plugins: [
   new ExtractTextPlugin({ filename: 'styles.css', allChunks: true, disable: process.env.NODE_ENV !== 'production' }),
-]  
+]
 
 ```
-+ update 
++ update
 In your App component let’s import our styles and console.log them.
 
 import styles from './App.scss';
@@ -178,7 +185,7 @@ This will run the automated build process, start up a webserver, and open the ap
 6. Use path.resolve on all path references in both the dev and prod webpack.config. [See this commit](https://github.com/coryhouse/pluralsight-redux-starter/commit/298848d4332d3bec9eb4e23592e710083acaf340) for an example.
 7. Delete any .eslintrc in your user directory and disable any ESLint plugin / custom rules within your editor since these will conflict with the ESLint rules defined in the course.
 8. On Windows? Open your console as an administrator. This will assure the console has the necessary rights to perform installs.
-9. Try using your OS's native command line instead of an editor's. For some people, an editor's command line configuration may cause issues. 
+9. Try using your OS's native command line instead of an editor's. For some people, an editor's command line configuration may cause issues.
 10. Ensure you do not have NODE_ENV=production in your env variables as it will not install the devDependencies. To check run this on the command line: `set NODE_ENV`. If it comes back as production, you need to clear this env variable.
 11. Make sure you're using the same imports as the course demo. I've seen some people import ES6 code from node_modules via different imports like `import Route from "react-router/es6/Route";` and `import IndexRoute from "react-router/es6/IndexRoute";`. Don't do that. :) Use the exact imports I use in the course.
 12. Reference bundle.js with a leading slash or [you'll get an unexpected token error on reload of deep links](https://github.com/coryhouse/pluralsight-redux-starter/issues/88).
@@ -223,7 +230,7 @@ This will run the automated build process, start up a webserver, and open the ap
 |eventsource-polyfill|Polyfill to support hot reloading in IE|
 |expect|Assertion library for use with Mocha|
 |express|Serves development and production builds|
-|extract-text-webpack-plugin| Extracts CSS into separate file for production build | 
+|extract-text-webpack-plugin| Extracts CSS into separate file for production build |
 |file-loader| Adds file loading support to Webpack |
 |jsdom|In-memory DOM for testing|
 |mocha| JavaScript testing library |
@@ -541,7 +548,7 @@ In the WebStorm menu `Run` select `Edit Configurations...`. Then click `+` and s
 
 Start your app by running `npm start`, then press `^D` on macOS or `F9` on Windows and Linux or click the green debug icon to start debugging in WebStorm.
 
-The same way you can debug your application in IntelliJ IDEA Ultimate, PhpStorm, PyCharm Pro, and RubyMine. 
+The same way you can debug your application in IntelliJ IDEA Ultimate, PhpStorm, PyCharm Pro, and RubyMine.
 
 ## Formatting Code Automatically
 
@@ -1916,7 +1923,7 @@ Use the following [`launch.json`](https://code.visualstudio.com/docs/editor/debu
       "name": "Debug CRA Tests",
       "type": "node",
       "request": "launch",
-      "runtimeExecutable": "${workspaceRoot}/node_modules/.bin/react-scripts",      
+      "runtimeExecutable": "${workspaceRoot}/node_modules/.bin/react-scripts",
       "args": [
         "test",
         "--runInBand",
@@ -2230,7 +2237,7 @@ If you’re using [Apache HTTP Server](https://httpd.apache.org/), you need to c
     RewriteRule ^ index.html [QSA,L]
 ```
 
-It will get copied to the `build` folder when you run `npm run build`. 
+It will get copied to the `build` folder when you run `npm run build`.
 
 If you’re using [Apache Tomcat](http://tomcat.apache.org/), you need to follow [this Stack Overflow answer](https://stackoverflow.com/a/41249464/4878474).
 
@@ -2670,7 +2677,7 @@ To resolve this:
 1. Open an issue on the dependency's issue tracker and ask that the package be published pre-compiled.
   * Note: Create React App can consume both CommonJS and ES modules. For Node.js compatibility, it is recommended that the main entry point is CommonJS. However, they can optionally provide an ES module entry point with the `module` field in `package.json`. Note that **even if a library provides an ES Modules version, it should still precompile other ES6 features to ES5 if it intends to support older browsers**.
 
-2. Fork the package and publish a corrected version yourself. 
+2. Fork the package and publish a corrected version yourself.
 
 3. If the dependency is small enough, copy it to your `src/` folder and treat it as application code.
 
