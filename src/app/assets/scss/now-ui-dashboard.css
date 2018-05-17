@@ -2994,6 +2994,14 @@ Created using IcoMoon - icomoon.io
     background: -moz-linear-gradient(#888 0%, #000 80%);
     background: linear-gradient(#888 0%, #000 80%);
     z-index: 3; }
+
+    .sidebar[data-color="default"] .nav li.active > a:not([data-toggle="collapse"]),
+  .off-canvas-sidebar[data-color="default"] .nav li.active > a:not([data-toggle="collapse"]) {
+    color: #000000; }
+    .sidebar[data-color="default"] .nav li.active > a:not([data-toggle="collapse"]) i,
+    .off-canvas-sidebar[data-color="default"] .nav li.active > a:not([data-toggle="collapse"]) i {
+      color: #000000; }
+
   .sidebar[data-color="blue"]:after,
   .off-canvas-sidebar[data-color="blue"]:after {
     background: #2CA8FF; }
