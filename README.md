@@ -7,6 +7,15 @@
   507  npm install --save history
   508  npm install --save jquery
 
+  https://github.com/auth0-samples/auth0-react-samples
+https://getpocket.com/a/read/1900158250
+https://getpocket.com/a/read/2156878010
+https://getpocket.com/a/read/1135887835
+https://github.com/auth0-blog/reactjs-authentication-tutorial/blob/master/src/utils/AuthService.js
+https://medium.com/javascript-scene/passwordless-authentication-with-react-and-auth0-c4cb003c7cde
+https://davidwalsh.name/react-authentication
+https://auth0.com/docs/quickstart/spa/react/01-login
+
 ###
 ```
 cd www
