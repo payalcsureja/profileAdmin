@@ -1,20 +1,6 @@
 # Starter Kit for [Building Applications in React and Redux in ES6]
 
-  503  npm install --save react-router-dom
-  504  npm install --save reactstrap
-  505  npm install --save react-notification-alert
-  506  npm install --save perfect-scrollbar
-  507  npm install --save history
-  508  npm install --save jquery
 
-  https://github.com/auth0-samples/auth0-react-samples
-https://getpocket.com/a/read/1900158250
-https://getpocket.com/a/read/2156878010
-https://getpocket.com/a/read/1135887835
-https://github.com/auth0-blog/reactjs-authentication-tutorial/blob/master/src/utils/AuthService.js
-https://medium.com/javascript-scene/passwordless-authentication-with-react-and-auth0-c4cb003c7cde
-https://davidwalsh.name/react-authentication
-https://auth0.com/docs/quickstart/spa/react/01-login
 
 ###
 ```
@@ -154,6 +140,35 @@ Create postcss.config.js file
 module.exports = { plugins: [require('autoprefixer')] };
 ```
 
+###extra modules for theme: 
+```
+   npm install --save react-router-dom
+   npm install --save reactstrap
+   npm install --save react-notification-alert
+   npm install --save perfect-scrollbar
+   npm install --save history
+   npm install --save jquery
+```
+
+###Deploy on AWS s3: 
+```
+http://profileadmin.s3-website-us-east-1.amazonaws.com
+
+https://getpocket.com/a/read/1472845556
+https://getpocket.com/a/read/2039861419
+```
+
+###auth links: 
+```
+https://github.com/auth0-samples/auth0-react-samples
+https://getpocket.com/a/read/1900158250
+https://getpocket.com/a/read/2156878010
+https://getpocket.com/a/read/1135887835
+https://github.com/auth0-blog/reactjs-authentication-tutorial/blob/master/src/utils/AuthService.js
+https://medium.com/javascript-scene/passwordless-authentication-with-react-and-auth0-c4cb003c7cde
+https://davidwalsh.name/react-authentication
+https://auth0.com/docs/quickstart/spa/react/01-login
+```
 
 ### serve build dir locally
 $ npm run build
