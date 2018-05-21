@@ -163,7 +163,11 @@ https://getpocket.com/a/read/2039861419
 ```
 
 ###auth links:
+
+npm install jwt-decode auth0-js --save
+
 ```
+https://auth0.com/blog/reactjs-authentication-tutorial/
 https://github.com/auth0-samples/auth0-react-samples
 https://getpocket.com/a/read/1900158250
 https://getpocket.com/a/read/2156878010

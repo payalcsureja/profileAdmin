@@ -9,33 +9,31 @@ import { PanelHeader, FormInputs, CardAuthor, CardSocials } from 'app/components
 import userBackground from 'app/assets/img/bg5.jpg';
 import userAvatar from 'app/assets/img/user.png';
 
-import http from 'app/http.js';
+import http from 'app/utils/http.js';
 
 class User extends React.Component{
-    // constructor(props) {
-    //  super(props);
+    constructor(props) {
+     super(props);
 
-    //     this.state = {
-    //     posts: []
-    //     };
-    // }
+        this.state = {
+        skills: []
+        };
+    }
 
     componentDidMount() {
         // plain GET request
         http.get('skills').subscribe(
             response => {
-                console.log(response); // no need to 'response.data'
+                // console.log(response); // no need to 'response.data'
+                const skills = response.data;
+                this.setState({ skills }); 
+                // console.log(this.state);
             },
             err => {
                 console.error(err);
             }
-        );
-
-        // axios.get(`http://www.reddit.com/r/${this.props.subreddit}.json`)
-        // .then(res => {
-        //     const posts = res.data.data.children.map(obj => obj.data);
-        //     this.setState({ posts });
-        // });
+        ); 
+         
     }
 
     render(){
