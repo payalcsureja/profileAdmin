@@ -140,7 +140,7 @@ Create postcss.config.js file
 module.exports = { plugins: [require('autoprefixer')] };
 ```
 
-###extra modules for theme: 
+###extra modules for theme:
 ```
    npm install --save react-router-dom
    npm install --save reactstrap
@@ -149,8 +149,12 @@ module.exports = { plugins: [require('autoprefixer')] };
    npm install --save history
    npm install --save jquery
 ```
-
-###Deploy on AWS s3: 
+###extra modules for http request via axios with rjxs wrapper module rxios
+```
+npm install --save axios rxjs rxios
+npm i --save rxjs-compat
+```
+###Deploy on AWS s3:
 ```
 http://profileadmin.s3-website-us-east-1.amazonaws.com
 
@@ -158,7 +162,7 @@ https://getpocket.com/a/read/1472845556
 https://getpocket.com/a/read/2039861419
 ```
 
-###auth links: 
+###auth links:
 ```
 https://github.com/auth0-samples/auth0-react-samples
 https://getpocket.com/a/read/1900158250

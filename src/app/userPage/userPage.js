@@ -9,7 +9,40 @@ import { PanelHeader, FormInputs, CardAuthor, CardSocials } from 'app/components
 import userBackground from 'app/assets/img/bg5.jpg';
 import userAvatar from 'app/assets/img/user.png';
 
+import { Rxios } from 'rxios';
+const http = new Rxios({
+  // all regular axios request configuration options are valid here
+  // check https://github.com/axios/axios#request-config
+  baseURL: 'https://my-node-rest.herokuapp.com/api/',
+});
+
 class User extends React.Component{
+    // constructor(props) {
+    //  super(props);
+
+    //     this.state = {
+    //     posts: []
+    //     };
+    // }
+
+    componentDidMount() {
+        // plain GET request
+        http.get('skills').subscribe(
+            response => {
+                console.log(response); // no need to 'response.data'
+            },
+            err => {
+                console.error(err);
+            }
+        );
+
+        // axios.get(`http://www.reddit.com/r/${this.props.subreddit}.json`)
+        // .then(res => {
+        //     const posts = res.data.data.children.map(obj => obj.data);
+        //     this.setState({ posts });
+        // });
+    }
+
     render(){
         return (
             <div>
