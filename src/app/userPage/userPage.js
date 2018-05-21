@@ -9,12 +9,7 @@ import { PanelHeader, FormInputs, CardAuthor, CardSocials } from 'app/components
 import userBackground from 'app/assets/img/bg5.jpg';
 import userAvatar from 'app/assets/img/user.png';
 
-import { Rxios } from 'rxios';
-const http = new Rxios({
-  // all regular axios request configuration options are valid here
-  // check https://github.com/axios/axios#request-config
-  baseURL: 'https://my-node-rest.herokuapp.com/api/',
-});
+import http from 'app/http.js';
 
 class User extends React.Component{
     // constructor(props) {
