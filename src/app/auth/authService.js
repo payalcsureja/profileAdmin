@@ -36,11 +36,11 @@ export function requireAuth(nextState, replace) {
   // if (!isLoggedIn()) {
   //   replace({pathname: '/'});
   // }
-  return new Promise((resolve, reject) => {     
+  return new Promise((resolve, reject) => {
     // Succeed half of the time.
     if (!isLoggedIn()) {
       reject("FAILURE");
-    } 
+    }
   });
 }
 
@@ -67,19 +67,19 @@ function getParameterByName(name) {
 }
 
 // Get and store access_token in local storage
-export function setAccessToken() { 
-  let accessToken = getParameterByName('access_token');  
+export function setAccessToken() {
+  let accessToken = getParameterByName('access_token');
   localStorage.setItem(ACCESS_TOKEN_KEY, accessToken);
 }
 
 // Get and store id_token in local storage
 export function setIdToken() {
-  let idToken = getParameterByName('id_token');  
+  let idToken = getParameterByName('id_token');
   localStorage.setItem(ID_TOKEN_KEY, idToken);
 }
 
 export function isLoggedIn() {
-  const idToken = getIdToken();  
+  const idToken = getIdToken();
   return !!idToken && !isTokenExpired(idToken);
 }
 

@@ -1,11 +1,10 @@
-// in src/restricted.js
 import React, { Component } from 'react';
 import { withRouter } from 'react-router-dom';
 import { requireAuth } from 'app/auth/authService';
 /**
  * Higher-order component (HOC) to wrap restricted pages
  */
-export default function BaseComponent() {
+export default function (BaseComponent) {
     class Restricted extends Component {
         componentWillMount() {
             this.checkAuthentication(this.props);
