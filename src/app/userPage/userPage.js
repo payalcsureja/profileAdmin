@@ -22,18 +22,22 @@ class User extends React.Component{
 
     componentDidMount() {
         // plain GET request
-        http.get('skills').subscribe(
+        this.getSkills = http.get('skills').subscribe(
             response => {
                 // console.log(response); // no need to 'response.data'
                 const skills = response.data;
-                this.setState({ skills }); 
+                this.setState({ skills });
                 // console.log(this.state);
             },
             err => {
                 console.error(err);
             }
-        ); 
-         
+        );
+
+    }
+
+    componentWillUnmount() {
+        this.getSkills.unsubscribe();
     }
 
     render(){
