@@ -7,7 +7,9 @@ import {
     Redirect
 } from 'react-router-dom';
 
-import { Header, Footer, Sidebar } from 'app/components'
+import Header from 'app/layout/header/header';
+import Footer from 'app/layout/footer/footer';
+import Sidebar from 'app/layout/sidebar/sidebar';
 
 import dashboardRoutes from 'app/routes/dashboard.js';
 import Restricted from 'app/auth/checkAuth.js';
