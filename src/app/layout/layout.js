@@ -13,6 +13,7 @@ import Sidebar from 'app/layout/sidebar/sidebar';
 
 import dashboardRoutes from 'app/routes/dashboard.js';
 import Restricted from 'app/auth/checkAuth.js';
+import { login, logout, isLoggedIn } from 'app/auth/authService';
 
 var ps;
 
@@ -38,9 +39,9 @@ class Dashboard extends React.Component{
     render(){
         return (
             <div className="wrapper">
-                <Sidebar {...this.props} routes={dashboardRoutes}/>
+                <Sidebar {...this.props} routes={dashboardRoutes} isLoggedIn={isLoggedIn}/>
                 <div className="main-panel" ref="mainPanel">
-                    <Header {...this.props}/>
+                    <Header {...this.props} login={login} logout={logout} isLoggedIn={isLoggedIn} />
                     <Switch>
                         {
                             dashboardRoutes.map((prop,key) => {

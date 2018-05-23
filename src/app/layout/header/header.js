@@ -111,6 +111,10 @@ class Header extends React.Component{
                         </div>
                         <NavbarBrand href="/">{this.getBrand()}</NavbarBrand>
                     </div>
+                    {
+                     (this.props.isLoggedIn()) ? ( <button className="btn btn-danger log" onClick={() => this.props.logout()}>Log out </button> ) : ( <button className="btn btn-info log" onClick={() => this.props.login()}>Log In</button> )
+                    }
+
                     {/*<NavbarToggler onClick={this.toggle}>
                         <span className="navbar-toggler-bar navbar-kebab"></span>
                         <span className="navbar-toggler-bar navbar-kebab"></span>

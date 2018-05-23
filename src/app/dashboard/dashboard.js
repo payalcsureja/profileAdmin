@@ -4,7 +4,7 @@ import {
     Card, CardHeader, CardBody, CardFooter, Row, Col
 } from 'reactstrap';
 
-import { login, logout, isLoggedIn } from 'app/auth/authService';
+// import { login, logout, isLoggedIn } from 'app/auth/authService';
 
 import {
     PanelHeader
@@ -30,9 +30,9 @@ class Dashboard extends React.Component{
                                     {/* {
                                         ( isLoggedIn() ) ? <Link to="/user-page">User</Link> :  ''
                                     } */}
-                                    {
+                                    {/*{
                                         (isLoggedIn()) ? ( <button className="btn btn-danger log" onClick={() => logout()}>Log out </button> ) : ( <button className="btn btn-info log" onClick={() => login()}>Log In</button> )
-                                    }
+                                    }*/}
                                 </CardBody>
                                 <CardFooter>
 
