@@ -11,6 +11,16 @@ import 'app/assets/scss/now-ui-dashboard.css';
 import 'app/assets/css/app.css';
 
 import indexRoutes from 'app/routes/index.js';
+import { isLoggedIn } from 'app/auth/authService';
+
+let layoutRoutes = indexRoutes.filter((route) => {
+    if(isLoggedIn()){
+        return route.requireAuth === true;
+    }else {
+        return route.requireAuth === false;
+    }
+    
+})
 
 const hist = createBrowserHistory();
 
@@ -20,7 +30,7 @@ class App extends Component {
       <Router history={hist}>
         <Switch>
             {
-                indexRoutes.map((prop,key) => {
+                layoutRoutes.map((prop,key) => { 
                     return (
                         <Route
                             path={prop.path}
