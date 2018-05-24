@@ -10,7 +10,7 @@ import {
 
 import Footer from 'app/layout/footer/footer';
 import {
-    Navbar, Container, NavbarBrand
+    Navbar, Container
 } from 'reactstrap';
 
 import dashboardRoutes from 'app/routes/dashboard.js';
@@ -47,8 +47,7 @@ class Home extends React.Component{
                         className="navbar-absolute fixed-top navbar-transparent navbar navbar-expand-lg bg-transparent"
                     >
                         <Container fluid> 
-                            <div className="navbar-wrapper">                            
-                                {/* <NavbarBrand href="/">Profile Admin</NavbarBrand> */}
+                            <div className="navbar-wrapper">  
                                 <div className="logo">
                                     <a href="/" className="simple-text logo-mini">
                                         <div className="logo-img">
