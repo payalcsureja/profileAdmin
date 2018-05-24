@@ -322,6 +322,10 @@ module.exports = {
     // It is absolutely essential that NODE_ENV was set to production here.
     // Otherwise React will be compiled in the very slow development mode.
     new webpack.DefinePlugin(env.stringified),
+    // new webpack.DefinePlugin({
+    //   'NODE_ENV': JSON.stringify(process.env.NODE_ENV),
+    //   'AUTH0_CALLBACK_URL': JSON.stringify(process.env.AUTH0_CALLBACK_URL)
+    // }),
     // Minify the code.
     new webpack.optimize.UglifyJsPlugin({
       compress: {

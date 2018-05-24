@@ -6,7 +6,7 @@ const ACCESS_TOKEN_KEY = 'access_token';
 
 const CLIENT_ID = 'LRkNvd9tw5kIuw0RgqZCYVb3RlScLucz';
 const CLIENT_DOMAIN = 'payalcsureja.auth0.com';
-const REDIRECT = 'http://localhost:3000/callback';
+const REDIRECT = process.env.REACT_APP_URL+'/callback'; //'http://localhost:3000/callback';
 const SCOPE = 'openid read:examples';
 const AUDIENCE = 'https://payalcsureja.auth0.com/api/v2/';
 

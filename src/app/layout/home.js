@@ -55,7 +55,7 @@ class Home extends React.Component{
                                         </div>
                                     </a>
                                     <a href="/" className="simple-text logo-normal">
-                                        Profile Admin
+                                        {process.env.REACT_APP_TITLE}
                                     </a>
                                 </div>
                             </div>
