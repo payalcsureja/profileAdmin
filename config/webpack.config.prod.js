@@ -148,10 +148,18 @@ module.exports = {
             test: /\.(js|jsx|mjs)$/,
             include: paths.appSrc,
             loader: require.resolve('babel-loader'),
-            options: {
-              
+            options: {              
               compact: true,
             },
+          },
+          {
+            test: /\.(js|jsx|mjs)$/,
+            include: paths.rxiosSrc,
+            loader: require.resolve('babel-loader'),
+            query: {
+              compact: true,
+              cacheDirectory: true
+            }
           },
           // The notation here is somewhat confusing.
           // "postcss" loader applies autoprefixer to our CSS.
